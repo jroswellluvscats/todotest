@@ -19,7 +19,6 @@ openSansObserver.load().then(() => {
   document.body.classList.add('fontLoaded');
 });
 
-const NAME_OF_EVENT = R3DC0N
 const initialState = {};
 const store = configureStore(initialState, history);
 const MOUNT_NODE = document.getElementById('app');
