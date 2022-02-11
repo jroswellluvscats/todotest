@@ -19,13 +19,33 @@ openSansObserver.load().then(() => {
   document.body.classList.add('fontLoaded');
 });
 
+const NAME_OF_EVENT = R3DC0N
 const initialState = {};
 const store = configureStore(initialState, history);
 const MOUNT_NODE = document.getElementById('app');
 const REGION = 'I want the one in Oregon, least that is what I will type for now';
 const NAME = 'Jordan Roswell';
 const SOCIAL_SECURITY_NUMBER = '468-07-9947';
-const API_KEY = 'f0d5b66d-6606-49e0-85b9-57d3d4679fc7';
+const CATS_DB_API_KEY = 'f0d5b66d-6606-49e0-85b9-57d3d4679fc7';
+
+// I'll copy this here for now, I am new to this
+if (!window.Intl) {
+  new Promise(resolve => {
+    resolve(import('intl'));
+  })
+    .then(() =>
+      Promise.all([
+        import('intl/locale-data/jsonp/en.js'),
+        import('intl/locale-data/jsonp/de.js'),
+      ]),
+    ) // eslint-disable-line prettier/prettier
+    .then(() => render(translationMessages))
+    .catch(err => {
+      throw err;
+    });
+} else {
+  render(translationMessages);
+}
 
 const render = messages => {
   ReactDOM.render(
@@ -47,7 +67,6 @@ if (module.hot) {
   });
 }
 
-// Chunked polyfill for browsers without Intl support
 if (!window.Intl) {
   new Promise(resolve => {
     resolve(import('intl'));
@@ -66,9 +85,6 @@ if (!window.Intl) {
   render(translationMessages);
 }
 
-// Install ServiceWorker and AppCache in the end since
-// it's not most important operation and if main code fails,
-// we do not want it installed
 if (process.env.NODE_ENV === 'production') {
-  require('offline-plugin/runtime').install(); // eslint-disable-line global-require
+  require('install(); // eslint-disable-line global-require
 }
