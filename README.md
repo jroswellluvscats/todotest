@@ -10,7 +10,7 @@
 <div align="center">
   <!-- Dependency Status -->
   <a href="https://david-dm.org/react-boilerplate/react-boilerplate">
-    <img src="image/p07ryyyj.jpg" alt="Dependency Status" />
+    <img src="images/p07ryyyj.jpg" alt="Dependency Status" />
   </a>
   <!-- devDependency Status -->
   <a href="https://david-dm.org/react-boilerplate/react-boilerplate#info=devDependencies">
