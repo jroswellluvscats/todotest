@@ -1,4 +1,4 @@
-<img src="../p07ryyyj.jpg" alt="react boilerplate banner" align="center" />
+<img src="p07ryyyj.jpg" alt="react boilerplate banner" align="center" />
 
 <br />
 
@@ -10,7 +10,7 @@
 <div align="center">
   <!-- Dependency Status -->
   <a href="https://david-dm.org/react-boilerplate/react-boilerplate">
-    <img src="../p07ryyyj.jpg" alt="Dependency Status" />
+    <img src="p07ryyyj.jpg" alt="Dependency Status" />
   </a>
   <!-- devDependency Status -->
   <a href="https://david-dm.org/react-boilerplate/react-boilerplate#info=devDependencies">
